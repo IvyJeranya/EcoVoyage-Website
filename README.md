@@ -1,3 +1,3 @@
 This is my very first frontend project, created during the first month of my coding journey. It was both exciting and challenging, as I had no idea what I was doing at first! Despite feeling a bit lost at times, it was incredibly fun and motivating. It sparked a desire to build something more practical and usable in the future. I hope that one day, when I look back at this project, I'll be reminded of how far I’ve come and how much I’ve grown. It’s an amazing feeling to see the progress I’ve made from those early days.
 
-Every step counts—don’t be afraid to take that first one, even if you're unsure where it will lead! Keep pushing forward, and you’ll surprise yourself.
+Every step counts—don’t be afraid to take that first one, even if you're unsure where it will lead! Keep pushing forward, and you’ll surprise yourself. 🌱
