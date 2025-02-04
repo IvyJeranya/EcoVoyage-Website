@@ -1,0 +1,230 @@
+/* Body/General style */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    display: flex; /* Flexbox for #container, providing a flexible layout. */
+    flex-direction: column; /* Organizes content in a vertical stack (column). */
+    min-height: 100vh; /* Ensures the container has a minimum height of 100% of the viewport height. */
+}
+
+/* Header Section */
+header {
+    display: flex; 
+    position: sticky; /* Keeps the header visible at the top of the screen when scrolling. */
+    top: 0px; /* Positions the header at the top of the page. */
+    z-index: 1000; /* Ensures the header is above other elements on the page. */
+    align-items: center;
+    justify-content: flex-start; /* Distributes elements horizontally with space between them. */
+    padding: 10px 20px; /* Adds padding inside the header: 10px top/bottom, 20px left/right. */
+    background-color: #9bc8a5;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a shadow below the header for decoration. */
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    cursor: pointer; /* Changes the cursor to a hand, indicating the logo is clickable. */
+} /* Indicates the logo is interactive. */
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 18px; 
+    font-style: italic; 
+    margin: 5px 0px 0px 20px; 
+    color: #424040;
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px 20px 10px 360px; /* Provides space for the sidebar */
+}
+
+p {
+    text-align: center;
+    color: #424040;
+    padding-top: 30px;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #424040;
+}
+
+.mainImg {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block; /* Ensures the image is centered with margin */
+}
+
+section {
+    background-color: #e8f4ea;
+    padding: 20px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    display: flex;
+    justify-content: center; /* Centers the heading horizontally */
+    width: 100%; /* Ensures the element takes up the full width */
+    text-align: center;
+    font-size: 24px;
+    color: #424040;
+}
+
+/* Flexbox for img1-container */
+.img1-container {
+    display: flex; /* Places the image and list horizontally */
+    flex-direction: row; /* Default order: image on the left, list on the right */
+    gap: 20px; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for img2-container (reverse order) */
+.img2-container {
+    display: flex; /* Places the image and list horizontally */
+    flex-direction: row-reverse; /* Reverses the order: image on the right, list on the left */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img1, .img2 {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 15px; 
+}
+
+/* Sidebar/Navigation Section */
+aside {
+    position: fixed; /* Keeps the sidebar fixed on the screen */
+    top: 0px; 
+    left: 0;
+    width: 300px; 
+    height: 100vh; 
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 0 10px 10px 0; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+aside h3 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #424040;
+}
+
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: #424040;
+}
+
+aside ul li {
+    position: relative; /* Allows moving an element from its default static position */
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline; /* Underlines the link when hovered */
+}
+
+/* Sidebar item hover effect */
+aside ul li::after { 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #9bc8a5;
+    transition: width 0.3s ease;
+}
+
+aside ul li:hover::after {
+    width: 50%;
+}
+
+/* Footer Section */
+footer {
+    text-align: center; 
+    margin: 10px 40px 10px 380px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    color: #9bc8a5; 
+    margin: 5px 0; 
+}
+
+.social-links {
+    list-style: none; 
+    padding: 0;
+    margin: 10px 0 0 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.social-links li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #9bc8a5; /* Gives links a green color */
+}
+
+.social-links li a:hover {
+    text-decoration: underline; /* Underlines the link when hovered */
+    color: #424040; /* Changes the color on hover for better interaction visibility */
+}
